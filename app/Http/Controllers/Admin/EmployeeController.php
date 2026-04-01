@@ -16,24 +16,14 @@ class EmployeeController extends Controller
 
     public function store(Request $request)
     {
+
+        // dd($request->all());
         $request->validate([
             'empId' => 'required',
             'name' => 'required',
-            'contact' => 'required',
-            'mailId' => 'required',
-            'address' => 'required',
-            'designation' => 'required',
-            'salary' => 'required',
-            'advance' => 'required',
         ], [
             'empId.required' => 'Employee ID Required',
             'name.required' => 'Employee Name Required',
-            'contact.required' => 'Employee Contact Required',
-            'mailId.required' => 'Employee Mail ID Required',
-            'address.required' => 'Employee Address Required',
-            'designation.required' => 'Employee designation Required',
-            'salary.required' => 'Employee Salary Required',
-            'advance.required' => 'Employee Advance Required',
         ]);
 
 
@@ -43,12 +33,13 @@ class EmployeeController extends Controller
         $employee->empId = $request->empId;
         $employee->name = $request->name;
         $employee->contact = $request->contact;
-        $employee->mailId = $request->mailId;
         $employee->address = $request->address;
         $employee->designation = $request->designation;
-        $employee->rating = $request->rating;
+        $employee->doj = $request->doj;
+        $employee->shift_timing = $request->shift_timing;
+        $employee->gender = $request->gender;
+        $employee->marital_status = $request->marital_status;
         $employee->salary = $request->salary;
-        $employee->advance = $request->advance;
         $employee->save();
 
         $notification = array(

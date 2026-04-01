@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Admin Login</title>
     <!--favicon-->
-    <link rel="icon" href="{{ asset('public/admin/assets/images/favicon-96x96.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('/admin/assets/images/favicon-96x96.png') }}" type="image/png">
     <!-- loader-->
-    <link href="{{ asset('public/admin/assets/css/pace.min.css') }}" rel="stylesheet">
-    <script src="{{ asset('public/admin/assets/js/pace.min.js') }}"></script>
+    <link href="{{ asset('/admin/assets/css/pace.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('/admin/assets/js/pace.min.js') }}"></script>
 
     <!--plugins-->
-    <link href="{{ asset('public/admin/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/admin/assets/plugins/metismenu/metisMenu.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/admin/assets/plugins/metismenu/mm-vertical.css') }}">
+    <link href="{{ asset('/admin/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/admin/assets/plugins/metismenu/metisMenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/admin/assets/plugins/metismenu/mm-vertical.css') }}">
     <!--bootstrap css-->
-    <link href="{{ asset('public/admin/assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/admin/assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
     <!--main css-->
-    <link href="{{ asset('public/admin/assets/css/bootstrap-extended.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/admin/sass/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/admin/sass/dark-theme.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/admin/sass/blue-theme.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/admin/sass/responsive.css') }}" rel="stylesheet">
+    <link href="{{ asset('/admin/assets/css/bootstrap-extended.css') }}" rel="stylesheet">
+    <link href="{{ asset('/admin/sass/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('/admin/sass/dark-theme.css') }}" rel="stylesheet">
+    <link href="{{ asset('/admin/sass/blue-theme.css') }}" rel="stylesheet">
+    <link href="{{ asset('/admin/sass/responsive.css') }}" rel="stylesheet">
 
 </head>
 
@@ -38,7 +38,7 @@
                     <div class="card rounded-4 mb-0 border-top border-4 border-primary border-gradient-1">
                         <div class="card-body p-5">
                             <div class="text-center">
-                                <img src="{{ asset('public/admin/assets/images/logo-icon.png') }}" class="mb-4"
+                                <img src="{{ asset('/admin/assets/images/logo-icon.png') }}" class="mb-4"
                                     width="145" alt="">
                             </div>
 
@@ -83,7 +83,7 @@
 
 
     <!--plugins-->
-    <script src="{{ asset('public/admin/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('/admin/assets/js/jquery.min.js') }}"></script>
 
     <script>
         $(document).ready(function() {
