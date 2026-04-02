@@ -63,7 +63,8 @@
                         <div class="menu-title">Attendance</div>
                     </a>
                     <ul>
-                        <li><a href="#"><i class="material-icons-outlined">arrow_right</i>Today
+                        <li><a href="{{ route('admin-attendance-today') }}"><i
+                                    class="material-icons-outlined">arrow_right</i>Today
                                 Attendance</a>
                         </li>
                         {{-- <li><a href="ecommerce-products.html"><i
