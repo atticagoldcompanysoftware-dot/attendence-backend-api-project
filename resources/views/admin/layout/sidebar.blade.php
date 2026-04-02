@@ -56,6 +56,32 @@
 
                     </ul>
                 </li>
+                <li>
+                    <a href="javascript:;" class="has-arrow">
+                        <div class="parent-icon"><i class="material-icons-outlined">shopping_bag</i>
+                        </div>
+                        <div class="menu-title">Attendance</div>
+                    </a>
+                    <ul>
+                        <li><a href="#"><i class="material-icons-outlined">arrow_right</i>Today
+                                Attendance</a>
+                        </li>
+                        {{-- <li><a href="ecommerce-products.html"><i
+                                    class="material-icons-outlined">arrow_right</i>Products</a>
+                        </li>
+                        <li><a href="ecommerce-customers.html"><i
+                                    class="material-icons-outlined">arrow_right</i>Customers</a>
+                        </li>
+                        <li><a href="ecommerce-customer-details.html"><i
+                                    class="material-icons-outlined">arrow_right</i>Customer Details</a>
+                        </li>
+                        <li><a href="ecommerce-orders.html"><i class="material-icons-outlined">arrow_right</i>Orders</a>
+                        </li>
+                        <li><a href="ecommerce-order-details.html"><i
+                                    class="material-icons-outlined">arrow_right</i>Order Details</a>
+                        </li> --}}
+                    </ul>
+                </li>
             </ul>
             <!--end navigation-->
         </div>

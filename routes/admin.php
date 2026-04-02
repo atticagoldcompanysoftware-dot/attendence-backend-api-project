@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AttendanceController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\BranchController;
 use App\Http\Controllers\Admin\EmployeeController;
@@ -54,6 +55,8 @@ Route::group(
                 Route::get('/employee/inactive/{id}', [EmployeeController::class, 'inactive'])->name('admin-employee-inactive');
                 Route::get('/employee/active/{id}', [EmployeeController::class, 'active'])->name('admin-employee-active');
                 Route::get('/employee/delete/{id}', [EmployeeController::class, 'delete'])->name('admin-employee-delete');
+
+                Route::get('/attendance/today', [AttendanceController::class, 'todayAttendance'])->name('admin-attendance-today');
             }
 
 

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Attendance extends Model
 {
@@ -25,4 +26,19 @@ class Attendance extends Model
         'check_out_time',
         'check_out_distance',
     ];
+
+    public function employee(): BelongsTo
+    {
+        return $this->belongsTo(Employee::class, 'empId', 'empId');
+    }
+
+    public function checkInBranch(): BelongsTo
+    {
+        return $this->belongsTo(Branch::class, 'check_in_branch_id', 'branchId');
+    }
+
+    public function checkOutBranch(): BelongsTo
+    {
+        return $this->belongsTo(Branch::class, 'check_out_branch_id', 'branchId');
+    }
 }
