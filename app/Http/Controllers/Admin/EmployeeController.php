@@ -72,13 +72,14 @@ class EmployeeController extends Controller
             'empId' => $request->empId,
             'name' => $request->name,
             'contact' => $request->contact,
-            'mailId' => $request->mailId,
             'address' => $request->address,
             'designation' => $request->designation,
-            'rating' => $request->rating,
+            'doj' => $request->doj,
+            'shift_timing' => $request->shift_timing,
+            'gender' => $request->gender,
+            'marital_status' => $request->marital_status,
+            'remark' => $request->remark,
             'salary' => $request->salary,
-            'advance' => $request->advance,
-
         ]);
 
         $notification = array(
